@@ -58,7 +58,7 @@ questions = [
 score = 0
 for i, q in enumerate(questions):
     st.subheader(q["question"])
-    selected = st.radio("", q["options"], key=i)
+    selected = st.radio("Select an answer", q["options"], key=i, label_visibility="collapsed")
     if selected == q["answer"]:
         score += 1
 
